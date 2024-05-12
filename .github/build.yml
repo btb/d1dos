@@ -1,0 +1,25 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  MINER: ${{github.workspace}}
+  INIT: ${{github.workspace}}\\init
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - uses: btb/setup-old-watcom@v0
+    - uses: btb/setup-old-masm@v0
+
+    - name: Build
+      run: |
+          wmake
+      shell: bash
