@@ -19,6 +19,7 @@ jobs:
       with:
         repository: btb/descent
         ref: v1.5
+        token: ${{ secrets.GH_PAT }}
         path: original
     - name: make
       run: wmake
