@@ -6,10 +6,6 @@ on:
   pull_request:
     branches: [ $default-branch ]
 
-env:
-  MINER: ${{github.workspace}}
-  INIT: ${{github.workspace}}\\init
-
 jobs:
   build:
     runs-on: windows-latest
