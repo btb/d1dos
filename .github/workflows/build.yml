@@ -19,3 +19,11 @@ jobs:
       run: |
           wmake
       shell: bash
+
+    - name: Upload
+      uses: actions/upload-artifact@v4
+      with:
+        name: DESCENTR.EXE
+        path: |
+          support/*.lib
+          main/descentr.exe
