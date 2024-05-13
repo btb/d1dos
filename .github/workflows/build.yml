@@ -13,7 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - uses: btb/setup-old-watcom@v0
+    - uses: btb/setup-old-watcom@v0.1
+      with:
+        version: 9.5b
     - uses: btb/setup-old-masm@v0
     - uses: actions/checkout@v4
       with:
