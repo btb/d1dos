@@ -28,7 +28,7 @@ clean: .SYMBOLIC
 
 .def.lib:
 	-mkdir tmp
-	del /q tmp\*.*
+	del tmp\*.*
 	cd tmp
 	..\binextr\binextr -e ..\..\original\descentr.exe -m ..\descentr.map ..\$<
 	for %i in (*.asm) do ml /c %i
@@ -36,7 +36,7 @@ clean: .SYMBOLIC
 	for %i in (*.obj) do %append tmp.lst %i
 	wlib ..\$@ @tmp.lst
 	cd ..
-	del /q tmp
+	del tmp
 	rmdir tmp
 	#copy $@ ..\external
 	
