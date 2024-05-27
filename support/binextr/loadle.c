@@ -22,7 +22,7 @@ int src_trg_compare(src_trg *a, src_trg *b) {
     return a->src - b->src;
 }
 #define T src_trg
-#include <set.h>
+#include "set.h"
 
 typedef struct reloc {
     set_src_trg map;

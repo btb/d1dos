@@ -54,7 +54,7 @@ int int_int_compare(int_int *a, int_int *b) {
     return a->a - b->a;
 }
 #define T int_int
-#include <set.h>
+#include "set.h"
 
 const char *sizename[] = {"near", "byte", "word", NULL, "dword", NULL, "fword", NULL, "qword"};
 

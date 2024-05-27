@@ -19,7 +19,7 @@ int ofs_name_compare(ofs_name *a, ofs_name *b) {
     return a->ofs - b->ofs; // || strcmp(a->name, b->name);
 }
 #define T ofs_name
-#include <set.h>
+#include "set.h"
 
 #define T ofs_name
 #define A JOIN(set, T)
@@ -106,7 +106,7 @@ int name_ofs_compare(name_ofs *a, name_ofs *b) {
 }
 #undef T
 #define T name_ofs
-#include <set.h>
+#include "set.h"
 
 enum tp { TP_UNK, TP_MEM, TP_SEG };
 enum mode { M_UNK, M_HDR, M_DATA };
