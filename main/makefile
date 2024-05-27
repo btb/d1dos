@@ -49,7 +49,7 @@ descentr.exe: descent.exe
 
 LCLEAN = 1
 lclean: .SYMBOLIC
-	del /q descent.exe
-	del /q descentr.exe
+	del descent.exe
+	del descentr.exe
 
 !include ..\wmake.def

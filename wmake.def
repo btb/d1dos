@@ -52,8 +52,8 @@ AFLAGS = /c /W3 /Zd /nologo $(AFLAGS_INCPATH) $(AFLAGS_DEBUG) $(GLOBAL_AFLAGS)
 	ml $(AFLAGS) $<
 
 clean: .SYMBOLIC
-	del /q *.obj
-	del /q *.lib
+	del *.obj
+	del *.lib
 	set SUBTARG=clean
 	%make lsub
 	%make lclean
