@@ -1,0 +1,38 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - uses: btb/setup-old-watcom@v0.1
+      with:
+        version: 9.5b
+    - uses: btb/setup-old-masm@v0
+    - uses: actions/checkout@v4
+      with:
+        repository: btb/descent
+        ref: v1.5
+        token: ${{ secrets.GH_PAT }}
+        path: original
+    - name: make
+      run: wmake
+
+    - name: compare
+      run: cmp -l original/DESCENTR.EXE main/DESCENTR.EXE | wc -l
+
+    - name: Upload
+      uses: actions/upload-artifact@v4
+      with:
+        name: DESCENTR.EXE
+        path: |
+          support/*.lib
+          main/descentr.exe

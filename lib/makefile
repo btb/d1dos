@@ -1,6 +1,6 @@
 default: .SYMBOLIC
 
 clean: .SYMBOLIC
-	del /q *.h
-	del /q *.inc
-	del /q *.lib
+	del *.h
+	del *.inc
+	del *.lib

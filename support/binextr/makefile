@@ -4,6 +4,6 @@ binextr.exe: binextr.obj loadle.obj loadmap.obj inslen.obj
 	wcc386 /zq /i. $<
 
 clean: .SYMBOLIC
-	del /q *.obj
-	del /q *.exe
+	del *.obj
+	del *.exe
 	
