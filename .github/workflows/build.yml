@@ -27,7 +27,7 @@ jobs:
       run: wmake
 
     - name: compare
-      run: cmp -x original/DESCENTR.EXE main/DESCENTR.EXE | wc -l
+      run: cmp -l original/DESCENTR.EXE main/DESCENTR.EXE | wc -l
 
     - name: Upload
       uses: actions/upload-artifact@v4
