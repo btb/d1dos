@@ -10,7 +10,7 @@ all: binextr\binextr.exe gwbind.exe mklibs .SYMBOLIC
 .c.obj:
 	wcc386 /zq /i. /ibinextr $<
 .obj.exe:
-	wcl386 /zq $<
+	wcl386 /zq /bt=dos $<
 
 binextr\binextr.exe:
 	cd binextr
