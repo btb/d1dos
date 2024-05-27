@@ -11,3 +11,5 @@ binextr
 original
 masm
 watcom
+lib/*.h
+lib/*.inc
