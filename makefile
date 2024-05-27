@@ -30,14 +30,4 @@ default: .SYMBOLIC
 bind: .SYMBOLIC
 	support\\gwbind original\\descentr.exe main\\descentr.exe
 
-real_clean: .SYMBOLIC
-	make clean
-	del lib\*.h
-	del lib\*.inc
-	%if %exists(lib\win)
-	  del lib\win\*.h
-	  del lib\win\*.inc
-	  del lib\win\*.lib
-	%endif
-
 !include wmake.def
