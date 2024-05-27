@@ -8,3 +8,6 @@ main/*.map
 binextr
 !binextr/
 .gdb_history
+original
+masm
+watcom
