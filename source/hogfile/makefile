@@ -15,5 +15,5 @@ PROGS = hogfile
 
 HOGFILE_SRCS = hogfile.c 
 
-
-!include ..\wmake.def
+#rules and targets common to all Miner makefiles
+%include $(INIT)\makefile.def

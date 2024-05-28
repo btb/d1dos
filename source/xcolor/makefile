@@ -18,4 +18,6 @@ xcolor.exe: xcolor.obj
 	wl386 xcolor.c 
 xcolor.obj: xcolor.c
 	wcc386 xcolor.c
-!include ..\wmake.def
+
+#rules and targets common to all Miner makefiles
+%include $(INIT)\makefile.def

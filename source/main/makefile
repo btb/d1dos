@@ -52,4 +52,5 @@ lclean: .SYMBOLIC
 	del descent.exe
 	del descentr.exe
 
-!include ..\wmake.def
+#rules and targets common to all Miner makefiles
+%include $(INIT)\makefile.def

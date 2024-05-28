@@ -41,4 +41,5 @@ CFTEST2_OBJS = cftest2.obj
 CFTEST2_SRCS = cftest2.c
 CFTEST2_LIBS = cflib.lib misc.lib mem.lib io.lib
 
-!include ..\wmake.def
+#rules and targets common to all Miner makefiles
+%include $(INIT)\makefile.def

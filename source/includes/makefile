@@ -25,4 +25,5 @@ TEST_PROGS = test
 TEST_SRCS = test.c mactest.c
 TEST_LIBS = io.lib
 
-!include ..\wmake.def
+#rules and targets common to all Miner makefiles
+%include $(INIT)\makefile.def

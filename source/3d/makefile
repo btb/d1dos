@@ -31,5 +31,4 @@ TEST_PROGS = 3dtest
 3DTEST_LIBS = 3d.lib vecmat.lib gr.lib io.lib fix.lib div0.lib texmap.lib misc.lib bm.lib
 
 #rules and targets common to all Miner makefiles
-
-!include ..\wmake.def
+%include $(INIT)\makefile.def

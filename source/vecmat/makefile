@@ -31,4 +31,5 @@ TEST_PROGS = vectest
 VECTEST_SRCS = vectest.c
 VECTEST_LIBS = vecmat.lib io.lib fix.lib
 
-!include ..\wmake.def
+#rules and targets common to all Miner makefiles
+%include $(INIT)\makefile.def

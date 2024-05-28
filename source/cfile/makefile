@@ -17,4 +17,5 @@ LIBS = cfile
 
 CFILE_OBJS = cfile.obj
 
-!include ..\wmake.def
+#rules and targets common to all Miner makefiles
+%include $(INIT)\makefile.def

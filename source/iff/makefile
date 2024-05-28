@@ -31,4 +31,5 @@ IFFTEST_LIBS = iff.lib gr.lib mem.lib bm.lib misc.lib cflib.lib cfile.lib
 IFFTESTV_SRCS = ifftestv.c
 IFFTESTV_LIBS = iff.lib vesa.lib cflib.lib cfile.lib
 
-!include ..\wmake.def
+#rules and targets common to all Miner makefiles
+%include $(INIT)\makefile.def

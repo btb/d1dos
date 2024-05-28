@@ -31,4 +31,5 @@ FIX_OBJS = fix.obj
 FIXTEST_SRCS = fixtest.c
 FIXTEST_LIBS = fix.lib io.lib
 
-!include ..\wmake.def
+#rules and targets common to all Miner makefiles
+%include $(INIT)\makefile.def

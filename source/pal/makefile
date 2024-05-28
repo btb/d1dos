@@ -37,4 +37,6 @@ iff15bpp.obj:
 testp.obj: 
 
 tga.obj: 
-!include ..\wmake.def
+
+#rules and targets common to all Miner makefiles
+%include $(INIT)\makefile.def

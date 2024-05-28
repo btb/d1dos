@@ -35,4 +35,5 @@ PARSTEST_LIBS = misc.lib
 ERRTEST_SRCS = errtest.c
 ERRTEST_LIBS = misc.lib
 
-!include ..\wmake.def
+#rules and targets common to all Miner makefiles
+%include $(INIT)\makefile.def

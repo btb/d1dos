@@ -31,4 +31,5 @@ DIV0_OBJS =  div0.obj
 TESTD_SRCS = testd.c testda.asm
 TESTD_LIBS = div0.lib
 
-!include ..\wmake.def
+#rules and targets common to all Miner makefiles
+%include $(INIT)\makefile.def

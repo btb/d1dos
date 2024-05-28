@@ -32,4 +32,5 @@ IO_OBJS = key.obj joy.obj mouse.obj timer.obj mono.obj joyc.obj dpmi.obj ipx.obj
 DEMO_SRCS = demo.c
 DEMO_LIBS = io.lib 
 
-!include ..\wmake.def
+#rules and targets common to all Miner makefiles
+%include $(INIT)\makefile.def

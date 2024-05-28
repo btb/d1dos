@@ -43,4 +43,5 @@ TESTG_LIBS = io.lib gr.lib misc.lib mem.lib iff.lib  cfile.lib
 #VESATEST_OBJS = vesatest.obj
 #VESATEST_LIBS = io.lib gr.lib misc.lib mem.lib cflib.lib 
 
-!include ..\wmake.def
+#rules and targets common to all Miner makefiles
+%include $(INIT)\makefile.def

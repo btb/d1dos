@@ -38,4 +38,5 @@ TESTG_SRCS = testg.c
 TESTG_LIBS = io.lib gr.lib ui.lib misc.lib mem.lib readfile.lib iff.lib func.lib cflib.lib cfile.lib
 TESTG_LFLAGS = option stack=50k
 
-!include ..\wmake.def
+#rules and targets common to all Miner makefiles
+%include $(INIT)\makefile.def

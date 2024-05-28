@@ -30,4 +30,5 @@ default: .SYMBOLIC
 bind: .SYMBOLIC
 	support\\gwbind ..\\original\\descentr.exe main\\descentr.exe
 
-!include wmake.def
+#all Miner makefiles should include this
+%include $(INIT)\makefile.def

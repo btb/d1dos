@@ -24,4 +24,5 @@ LIBS = mem
 
 MEM_OBJS = mem.obj
 
-!include ..\wmake.def
+#rules and targets common to all Miner makefiles
+%include $(INIT)\makefile.def
