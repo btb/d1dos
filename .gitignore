@@ -2,7 +2,7 @@
 *~
 *.lib
 *.exe
-main/*.map
+source/main/*.map
 *.err
 *.bak
 binextr
@@ -11,5 +11,5 @@ binextr
 original
 masm
 watcom
-lib/*.h
-lib/*.inc
+source/lib/*.h
+source/lib/*.inc

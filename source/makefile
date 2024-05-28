@@ -28,6 +28,6 @@ default: .SYMBOLIC
 	%make bind
 
 bind: .SYMBOLIC
-	support\\gwbind original\\descentr.exe main\\descentr.exe
+	support\\gwbind ..\\original\\descentr.exe main\\descentr.exe
 
 !include wmake.def

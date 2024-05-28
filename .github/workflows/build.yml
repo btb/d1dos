@@ -24,15 +24,15 @@ jobs:
         token: ${{ secrets.GH_PAT }}
         path: original
     - name: make
-      run: wmake
+      run: cd source && wmake
 
     - name: compare
-      run: cmp -l original/DESCENTR.EXE main/DESCENTR.EXE | wc -l
+      run: cmp -l original/DESCENTR.EXE source/main/DESCENTR.EXE | wc -l
 
     - name: Upload
       uses: actions/upload-artifact@v4
       with:
         name: DESCENTR
         path: |
-          support/*.lib
-          main/descentr.exe
+          source/support/*.lib
+          source/main/descentr.exe
