@@ -681,7 +681,7 @@ set_no_build .PHONY:
 	  %endif
 	  ##%if '$(<:D)'=='.'
 	    ##@addpath $(OBJDIR)\$(@:F) $(CWD:S/H:/F:\home\$(USER)/)\$<
-	    @addpath $(OBJDIR)\$(@:F) $(<:A,S/$(<:Z)//)
+	    #@addpath $(OBJDIR)\$(@:F) $(<:A,S/$(<:Z)//)
 	  ##%endif
 	%endif
 
@@ -712,7 +712,7 @@ set_no_build .PHONY:
 	  $(AS) $(*,F).asm $(__AFLAGS)
 	  ##%if '$(<:D)'=='.'
 	    ##@addpath $(OBJDIR)\$(@:F) $(CWD:S/H:/F:\home\$(USER)/)\$<
-	    @addpath $(OBJDIR)\$(@:F) $(<:A,S/$(<:Z)//)
+	    #@addpath $(OBJDIR)\$(@:F) $(<:A,S/$(<:Z)//)
 	  ##%endif
 	%endif
 
