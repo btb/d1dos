@@ -13,7 +13,7 @@ LIBDIR = ..\main
 CCFLAGS = /dNETWORK /dRELEASE /dNDEBUG
 
 # What to install, and where to install it
-INSTALL_TARGS = io.lib joy.h key.h mono.h mouse.h timer.h swift.h dpmi.h ipx.h
+INSTALL_TARGS = io.lib joy.h key.h mono.h mouse.h timer.h dpmi.h ipx.h #swift.h
 
 # What to clean
 CLEAN_TARGS = $(OBJDIR)\*.obj
