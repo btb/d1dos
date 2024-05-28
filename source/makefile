@@ -16,16 +16,16 @@ CLEAN_TARGS = lib\*.lib
 
 default .PHONY:
 	cd bios
-	wmake linstallh
+	$(MAKE) linstallh
 	cd ..\\misc
-	wmake linstallh
+	$(MAKE) linstallh
 	cd ..\\ui
-	wmake linstallh
+	$(MAKE) linstallh
 	cd ..\\pslib
-	wmake linstallh
+	$(MAKE) linstallh
 	cd ..
-	%make lsub
-	%make bind
+	$(MAKE) lsub
+	$(MAKE) bind
 
 bind .PHONY:
 	support\\gwbind ..\\original\\descentr.exe main\\descentr.exe
