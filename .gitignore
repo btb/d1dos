@@ -10,6 +10,7 @@ binextr
 .gdb_history
 original
 masm
+opus
 watcom
 source/lib/*.h
 source/lib/*.inc
