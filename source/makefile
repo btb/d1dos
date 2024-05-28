@@ -14,7 +14,7 @@ SUBTARGETS = optimize no_mono no_debug linstall		#for release
 # When making clean here, delete libs
 CLEAN_TARGS = lib\*.lib
 
-default: .SYMBOLIC
+default .PHONY:
 	cd bios
 	wmake linstallh
 	cd ..\\misc
@@ -27,7 +27,7 @@ default: .SYMBOLIC
 	%make lsub
 	%make bind
 
-bind: .SYMBOLIC
+bind .PHONY:
 	support\\gwbind ..\\original\\descentr.exe main\\descentr.exe
 
 #all Miner makefiles should include this

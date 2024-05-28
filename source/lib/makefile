@@ -1,6 +1,6 @@
-default: .SYMBOLIC
+default .PHONY:
 
-clean: .SYMBOLIC
+clean .PHONY:
 	del *.h
 	del *.inc
 	del *.lib

@@ -39,7 +39,7 @@ DESCENT_OBJS = inferno.obj game.obj gauges.obj mglobal.obj &
 GLOBAL_INCFILES = settings.h
 GLOBAL_CFLAGS = /fi=$(GLOBAL_INCFILES)
 
-default: descentr.exe .SYMBOLIC
+default .PHONY: descentr.exe
 
 descent.exe: $(DESCENT_OBJS) $(DESCENT_LIBS)
 	*wlink option map,stack=50k,stub=$(%watcom)\binb\wstub.exe name $@ sys dos4g file { $(DESCENT_OBJS) } library { $(DESCENT_LIBS) }
@@ -48,7 +48,7 @@ descentr.exe: descent.exe
 	copy descent.exe $@
 
 LCLEAN = 1
-lclean: .SYMBOLIC
+lclean .PHONY:
 	del descent.exe
 	del descentr.exe
 
