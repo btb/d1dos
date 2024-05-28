@@ -24,7 +24,7 @@ default .PHONY:
 	%cd ..\pslib
 	$(MAKE) $(MFLAGS) linstallh
 	%cd ..
-	$(MAKE) $(MFLAGS) lsub
+	$(MAKE) $(MFLAGS) all
 	$(MAKE) $(MFLAGS) bind
 
 bind .PHONY:
