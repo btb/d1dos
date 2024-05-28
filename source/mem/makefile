@@ -7,12 +7,6 @@
 # Makefile for memory debugging
 #
 
-LIBDIR = ..\main
-#
-
-CCFLAGS = /dNETWORK /dRELEASE /dNDEBUG
-
-
 # What to install, and where to install it
 INSTALL_TARGS = mem.lib mem.h
 

@@ -7,11 +7,6 @@
 # Makefile for fixed-point library
 #
 
-LIBDIR = ..\main
-#
-
-CCFLAGS = /dNETWORK /dRELEASE /dNDEBUG
-
 # What to install, and where to install it
 INSTALL_TARGS = fix.lib fix.h fix.inc
 

@@ -7,11 +7,6 @@
 # Makefile for macro and header files
 #
 
-LIBDIR = ..\main
-#
-
-CCFLAGS = /dNETWORK /dRELEASE /dNDEBUG
-
 # What to install
 INSTALL_TARGS = types.h types.inc psmacros.inc
 

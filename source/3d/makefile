@@ -7,12 +7,6 @@
 # Makefile for 3d library
 #
 
-LIBDIR = ..\main
-#
-
-CCFLAGS = /dNETWORK /dRELEASE /dNDEBUG
-
-
 # What to install
 INSTALL_TARGS = 3d.lib 3d.h 3d.inc
 

@@ -7,12 +7,6 @@
 # Makefile for hack3df testbed
 #
 
-LIBDIR = ..\main
-#
-
-CCFLAGS = /dNETWORK /dRELEASE /dNDEBUG
-
-
 #Uncomment the following 3 lines if you want to build with only C code.
 #NASM = 1
 #GLOBAL_CFLAGS+=/dNASM

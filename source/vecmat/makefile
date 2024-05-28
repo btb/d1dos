@@ -7,11 +7,6 @@
 # Makefile for vector/matrix library
 #
 
-LIBDIR = ..\main
-#
-
-CCFLAGS = /dNETWORK /dRELEASE /dNDEBUG
-
 # What to install
 INSTALL_TARGS = vecmat.lib vecmat.h vecmat.inc
 

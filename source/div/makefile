@@ -7,11 +7,6 @@
 # Makefile for bios functions
 #
 
-LIBDIR = ..\main
-#
-
-CCFLAGS = /dNETWORK /dRELEASE /dNDEBUG
-
 # What to install, and where to install it
 INSTALL_TARGS = div0.lib div0.h div0.inc
 

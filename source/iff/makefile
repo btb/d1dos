@@ -7,11 +7,6 @@
 # Makefile for IFF library
 #
 
-LIBDIR = ..\main
-#
-
-CCFLAGS = /dNETWORK /dRELEASE /dNDEBUG
-
 # What to install
 INSTALL_TARGS = iff.lib iff.h
 
