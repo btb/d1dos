@@ -2,15 +2,15 @@
 # Makefile for DESCENT execuable
 #
 
-DESCENT_LIBS =	..\\lib\\3d.lib ..\\lib\\gr.lib ..\\lib\\fix.lib \
-				..\\lib\\io.lib ..\\lib\\iff.lib ..\\lib\\vecmat.lib \
-				..\\lib\\cfile.lib \
-				..\\lib\\mem.lib \
-				..\\lib\\div0.lib ..\\lib\\misc.lib ..\\lib\\texmap.lib \
-				..\\support\\sosdigi.lib \
-				..\\support\\sosmidi.lib \
-				..\\support\\loadpats.lib \
-				..\\support\\commlib.lib
+DESCENT_LIBS =	..\lib\3d.lib ..\lib\gr.lib ..\lib\fix.lib \
+				..\lib\io.lib ..\lib\iff.lib ..\lib\vecmat.lib \
+				..\lib\cfile.lib \
+				..\lib\mem.lib \
+				..\lib\div0.lib ..\lib\misc.lib ..\lib\texmap.lib \
+				..\support\sosdigi.lib \
+				..\support\sosmidi.lib \
+				..\support\loadpats.lib \
+				..\support\commlib.lib
 
 #		sosdigi.lib #sosmidi.lib \
 		#iglasses.lib gclfr32.lib loadpats.lib

@@ -15,20 +15,20 @@ SUBTARGETS = optimize no_mono no_debug linstall		#for release
 CLEAN_TARGS = lib\*.lib
 
 default .PHONY:
-	cd bios
-	$(MAKE) linstallh
-	cd ..\\misc
-	$(MAKE) linstallh
-	cd ..\\ui
-	$(MAKE) linstallh
-	cd ..\\pslib
-	$(MAKE) linstallh
-	cd ..
-	$(MAKE) lsub
-	$(MAKE) bind
+	%cd bios
+	$(MAKE) $(MFLAGS) linstallh
+	%cd ..\misc
+	$(MAKE) $(MFLAGS) linstallh
+	%cd ..\ui
+	$(MAKE) $(MFLAGS) linstallh
+	%cd ..\pslib
+	$(MAKE) $(MFLAGS) linstallh
+	%cd ..
+	$(MAKE) $(MFLAGS) lsub
+	$(MAKE) $(MFLAGS) bind
 
 bind .PHONY:
-	support\\gwbind ..\\original\\descentr.exe main\\descentr.exe
+	support\gwbind ..\original\descentr.exe main\descentr.exe
 
 #all Miner makefiles should include this
 %include $(INIT)\makefile.def
