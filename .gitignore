@@ -9,6 +9,7 @@ binextr
 !binextr/
 .gdb_history
 original
+djgpp
 masm
 opus
 watcom
