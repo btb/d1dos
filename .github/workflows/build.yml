@@ -6,6 +6,14 @@ on:
   pull_request:
     branches: [ mymain ]
 
+env:
+  INIT: ${{github.workspace}}\\init
+  OPUSMAKECFG: ${{github.workspace}}\\make.ini
+  MINER: ${{github.workspace}}
+  MINERLOCAL: ${{github.workspace}}
+  MINERGAME: ${{github.workspace}}\\source\\main
+  DOS4GPATH: ${{github.workspace}}\\4gwpro
+
 jobs:
   build:
 
@@ -13,10 +21,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - uses: btb/setup-opus-make@v0
     - uses: btb/setup-old-watcom@v0.1
       with:
         version: 9.5b
     - uses: btb/setup-old-masm@v0
+    - uses: actions/checkout@v4
+      with:
+        repository: btb/dos4gwpro
+        path: 4gwpro
     - uses: actions/checkout@v4
       with:
         repository: btb/descent
@@ -24,10 +37,12 @@ jobs:
         token: ${{ secrets.GH_PAT }}
         path: original
     - name: make
-      run: cd source && wmake
-
+      run: cd support && wmake
+    - name: make
+      run: cd source && make
+    
     - name: compare
-      run: cmp -l original/DESCENTR.EXE source/main/DESCENTR.EXE | wc -l
+      run: cmp -l original/DESCENTR.EXE source/main/DESCENTR.BND | wc -l
 
     - name: Upload
       uses: actions/upload-artifact@v4
