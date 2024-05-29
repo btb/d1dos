@@ -42,4 +42,4 @@ clean: .SYMBOLIC
 	#copy $@ ..\external
 	
 mklibs: $(LIBS) .SYMBOLIC
-	wlib -x -d=..\lib main.lib
+	wlib -x -d=..\source\main\obj main.lib
