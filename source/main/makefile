@@ -17,7 +17,7 @@ MINERGAME ?= $(MINERLOCAL)\game
 # Where to find libraries we didn't write
 #EXTLIB_DIR = $(MINERLOCAL)\source\extlib
 #EXTLIBS = $(EXTLIB_DIR)\greenlf $(EXTLIB_DIR)\sos
-EXTLIBS = $(MINERLOCAL)\source\external
+EXTLIBS = $(MINERLOCAL)\source\external $(MINERLOCAL)\support
 
 # What programs to make
 %ifdef SHAREWARE
@@ -26,15 +26,15 @@ PROGS = $(MINERGAME)\dcntshr
 PROGS = $(MINERGAME)\descentr
 %endif
 
-DESCENT_LIBS =	..\lib\3d.lib ..\lib\gr.lib ..\lib\fix.lib \
-				..\lib\io.lib ..\lib\iff.lib ..\lib\vecmat.lib \
-				..\lib\cfile.lib \
-				..\lib\mem.lib \
-				..\lib\div0.lib ..\lib\misc.lib ..\lib\texmap.lib \
-				..\support\sosdigi.lib \
-				..\support\sosmidi.lib \
-				..\support\loadpats.lib \
-				..\support\commlib.lib
+DESCENT_LIBS =	3d.lib gr.lib fix.lib \
+				io.lib iff.lib vecmat.lib \
+				cfile.lib \
+				mem.lib \
+				div0.lib misc.lib texmap.lib \
+				sosdigi.lib \
+				sosmidi.lib \
+				loadpats.lib \
+				commlib.lib
 
 #		sosdigi.lib #sosmidi.lib \
 		#iglasses.lib gclfr32.lib loadpats.lib
