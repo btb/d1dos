@@ -25,10 +25,12 @@ default .PHONY:
 	$(MAKE) $(MFLAGS) linstallh
 	%cd ..
 	$(MAKE) $(MFLAGS) all
+	%cd main
 	$(MAKE) $(MFLAGS) bind
+	%cd ..
 
-bind .PHONY:
-	support\gwbind ..\original\descentr.exe main\descentr.exe
+# bind .PHONY:
+# 	support\gwbind ..\original\descentr.exe main\descentr.exe
 
 #all Miner makefiles should include this
 %include $(INIT)\makefile.def
