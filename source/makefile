@@ -12,7 +12,7 @@ SUBTARGETS = optimize no_mono no_debug linstall		#for release
 ##SUBTARGETS = linstall					#for debugging
 
 # When making clean here, delete libs
-CLEAN_TARGS = lib\*.lib
+CLEAN_TARGS = lib\*.lib lib\*.h lib\*.inc
 
 default .PHONY:
 	%cd bios
