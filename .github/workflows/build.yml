@@ -35,5 +35,6 @@ jobs:
         name: DESCENTR
         path: |
           support/*.lib
+          main/descent.map
           main/descent.exe
           main/descentr.exe
