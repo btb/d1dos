@@ -135,8 +135,8 @@ data .NODEFAULT:
 	    @copy settings.tmp settings.h >nul
 	  %endif
 	%endif
-	# @del settings.tmp
-	# @del ____temp.tmp
+	@del settings.tmp
+	@del ____temp.tmp
 
 # Subroutine to add lines to SETTINGS.H
 def_setting .PHONY .NODEFAULT:
@@ -229,8 +229,8 @@ def_setting2 .PHONY .NODEFAULT:
 	  @touch vers_id.h
 	%endif
 
-	# @del vers_id.tmp
-	# @del ____temp.tmp
+	@del vers_id.tmp
+	@del ____temp.tmp
 
 # default .PHONY: descentr.exe
 
