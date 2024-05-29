@@ -13,4 +13,4 @@ For wine, patch wlink.exe with [this patch](https://gist.github.com/arbruijn/ace
 
 The Descent exe must be copied to the `original` directory.
 
-Start compilation with `wmake` in the top directory.
+Start compilation with `make` in the source directory.
