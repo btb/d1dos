@@ -5,7 +5,7 @@
 #
 
 # The only thing to make is the subdirs
-SUBSYSTEMS = lib includes mem misc fix cfile 2d bios iff div vecmat 3d texmap
+SUBSYSTEMS = includes mem misc fix cfile 2d bios iff div vecmat 3d texmap
 
 # What to make in the subdirs if nothing specified
 SUBTARGETS = optimize no_mono no_debug linstall		#for release
